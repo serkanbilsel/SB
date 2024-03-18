@@ -70,3 +70,91 @@ for (let i = 0, len = revealDelayElements.length; i < len; i++) {
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
+
+
+
+  function toggleDescription() {
+    const description = document.querySelector('.detailed-description');
+
+    // Açıklamanın gösterilip gösterilmediğini kontrol ediyoruz
+    const isVisible = description.style.display !== 'none';
+
+    // Açıklamanın görünürlüğünü değiştiriyoruz
+    if (isVisible) {
+      description.style.display = 'none';
+    } else {
+      description.style.display = 'block';
+    }
+  }
+
+
+  window.addEventListener('scroll', function() {
+    var element = document.querySelector('.title-wrapper'); // Görünürlüğü kontrol edilecek elementin seçimi
+
+    var position = element.getBoundingClientRect(); // Elementin pozisyon bilgisini al
+
+    // Sayfa üzerinde elementin görünür olup olmadığını kontrol et
+    if (position.top >= 0 && position.bottom <= window.innerHeight) {
+        element.classList.add('revealed'); // Element görünür alan içindeyse ilgili CSS sınıfını ekle
+    } else {
+        element.classList.remove('revealed'); // Element görünür alan dışında ise ilgili CSS sınıfını kaldır
+    }
+});
+
+
+
+window.addEventListener('scroll', function() {
+  var element = document.querySelector('.title-wrapper'); // Görünürlüğü kontrol edilecek elementin seçimi
+
+  var position = element.getBoundingClientRect(); // Elementin pozisyon bilgisini al
+
+  // Sayfa üzerinde elementin görünür olup olmadığını kontrol et
+  if (position.top >= 0 && position.bottom <= window.innerHeight) {
+      element.classList.add('revealed'); // Element görünür alan içindeyse ilgili CSS sınıfını ekle
+  } else {
+      element.classList.remove('revealed'); // Element görünür alan dışında ise ilgili CSS sınıfını kaldır
+  }
+});
+// JavaScript code
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggler = document.getElementById('menu-toggler');
+  const menuLabel = document.querySelector('label[for="menu-toggler"]');
+  const menuItems = document.querySelectorAll('.menu-item');
+
+  // Resmin üzerine gelme olayını dinle
+  const image = document.querySelector('.hero-banner img');
+  image.addEventListener('mouseenter', function () {
+    menuToggler.checked = true; // menüyü açmak için menü toggle'ı true olarak ayarla
+  });
+
+  // Resmin dışına çıkma olayını dinle
+ 
+  // Menü öğelerine tıklanınca menüyü kapat
+  menuItems.forEach(function (item) {
+    item.addEventListener('click', function () {
+      menuToggler.checked = false;
+    });
+  });
+
+  // Menü açıldığında menü toggle'ını kaydırma özelliğini ekle
+  menuToggler.addEventListener('change', function () {
+    if (this.checked) {
+      document.body.style.overflow = 'hidden'; // Menü açıldığında sayfanın kaydırılmasını engelle
+    } else {
+      document.body.style.overflow = ''; // Menü kapandığında sayfanın kaydırılmasını etkinleştir
+    }
+  });
+
+  // Menü etiketine tıklandığında menüyü kapat
+  menuLabel.addEventListener('click', function () {
+    menuToggler.checked = false;
+  });
+});
+
+
+if (/Mobi|Android/i.test(navigator.userAgent)) {
+  window.addEventListener('load', function() {
+    // Menüyü açmak için menü toggle'ını işaretleyin
+    document.getElementById('menu-toggler').checked = true;
+  });
+}

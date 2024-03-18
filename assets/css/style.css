@@ -2,16 +2,134 @@
   #main.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
 
 
 
+.whatsapp-button {
+  background-color: #25d366;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px; /* Kenarları biraz büyüttük */
+  padding: 12px 24px; /* Kenarlara daha fazla boşluk ekledik */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center; /* Metni ortala */
+}
+
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+  transform: translateY(-3px); /* Yukarı doğru kaydırma efekti */
+}
+
+.call-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px; /* Kenarları biraz büyüttük */
+  padding: 12px 24px; /* Kenarlara daha fazla boşluk ekledik */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center; /* Metni ortala */
+}
+
+.call-button:hover {
+  background-color: #177fbb;
+  transform: translateY(-3px); /* Yukarı doğru kaydırma efekti */
+}
+
+
+
+.section-title-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+  
+
+.section-title {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+
+.skills-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.skill-category {
+  width: 50%;
+  text-align: center;
+}
+
+.skill-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skill-category-title {
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skill {
+  margin-bottom: 5px;
+}
+
+.skill:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+
+
+
+
+.skill-category {
+  width: calc(50% - 0px); /* Yetenek kategorilerinin genişliğini ayarladık ve aralarındaki boşluğu da hesaba kattık */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Animasyon için transition eklendi */
+}
+
+.skill-category:hover {
+  transform: scale(1.1); /* Yetenek kategorilerinin büyümesini sağlayan ölçeklendirme */
+}
+
+.skill-category-title {
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+}
+
+.skill-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skill {
+  margin-bottom: 5px;
+}
+
+.skill:hover {
+  color: #007bff;
+  cursor: pointer;
+}
 
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
+  
 \*-----------------------------------*/
 
 :root {
@@ -164,9 +282,12 @@ body.nav-active { overflow: hidden; }
 
 .social-list {
   display: flex;
-  align-items: center;
+  margin-left: auto; /* Son öğeyi sağa hizala */
   gap: 12px;
+
 }
+
+
 
 .social-link {
   font-size: 2rem;
@@ -177,7 +298,9 @@ body.nav-active { overflow: hidden; }
 
 .section { padding-block: var(--section-padding); }
 
-.w-100 { width: 100%; }
+.w-100 { width: 100%; 
+ 
+}
 
 .h1,
 .h2,
@@ -226,12 +349,12 @@ body.nav-active { overflow: hidden; }
 
 [data-reveal] {
   opacity: 0;
-  transition: 0.75s ease;
+  transition: 0.85s ease;
 }
 
 [data-reveal="top"] { transform: translateY(-30px); }
 
-[data-reveal="bottom"] { transform: translateY(30px); }
+[data-reveal="bottom"] { transform: translateY(60px); }
 
 [data-reveal="left"] { transform: translateX(-30px); }
 
@@ -363,7 +486,7 @@ body.nav-active { overflow: hidden; }
 
 .hero {
   padding-block-start: calc(var(--section-padding) + 50px);
-  background-color: var(--cultured);
+  background-color: var(--cultured); 
 }
 
 .hero .container {
@@ -386,6 +509,7 @@ body.nav-active { overflow: hidden; }
   -webkit-mask-position: center;
   mask-size: auto;
   -webkit-mask-size: auto;
+  
 }
 
 .hero .shape {

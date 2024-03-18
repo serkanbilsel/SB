@@ -1,0 +1,388 @@
+
+.hero-banner {
+  position: relative;
+}
+
+.menu {
+  position: relative;
+  
+}
+
+.menu-item {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.menu-item a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+  pointer-events: none;
+  transition: 0.85s;
+}
+
+
+
+.menu-toggler:checked ~ .menu .menu-item {
+  opacity: 1;
+}
+
+.menu-toggler:checked ~ .menu .menu-item:nth-child(1) {
+  transform: rotate(0deg) translateX(-250px);
+}
+
+.menu-toggler:checked ~ .menu .menu-item:nth-child(2) {
+  transform: rotate(60deg) translateX(-250px);
+}
+
+.menu-toggler:checked ~ .menu .menu-item:nth-child(3) {
+  transform: rotate(120deg) translateX(-250px);
+}
+
+.menu-toggler:checked ~ .menu .menu-item:nth-child(4) {
+  transform: rotate(180deg) translateX(-250px);
+}
+
+.menu-toggler:checked ~ .menu .menu-item:nth-child(5) {
+  transform: rotate(240deg) translateX(-250px);
+}
+
+.menu-toggler:checked ~ .menu .menu-item:nth-child(6) {
+  transform: rotate(300deg) translateX(-250px);
+}
+
+.menu-item a:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.menu-toggler + label {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  display: block;
+  background: rgba(255, 255, 255, 0.7);
+  transition: transform 0.5s, top 0.5s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.menu-toggler + label:before,
+.menu-toggler + label:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  display: block;
+  background: rgba(255, 255, 255, 0.7);
+  transition: transform 0.5s, top 0.5s;
+  top: 10px;
+}
+
+.menu-toggler + label:before {
+  left: 0;
+}
+
+.menu-toggler + label:after {
+  right: 0;
+}
+
+.menu-toggler:hover + label,
+.menu-toggler:hover + label:before,
+.menu-toggler:hover + label:after {
+  background: white;
+}
+
+.menu-toggler:checked + label {
+  background: transparent;
+}
+
+.menu-toggler:checked + label:before {
+  top: 0;
+  width: 30px;
+  transform-origin: 50% 50%;
+  transform: rotate(45deg);
+}
+
+.menu-toggler:checked + label:after {
+  top: 0;
+  width: 30px;
+  transform-origin: 50% 50%;
+  transform: rotate(-45deg);
+}
+
+.image {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+  
+  
+  
+  .menu-toggler {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .menu-item a:hover {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 55px; /* Yazı boyutunu artırabilirsiniz */
+    opacity: 1; /* Aktif olduğunda tamamen görünür olmasını sağlar */
+  }
+  
+  
+  .menu-item {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    display: block;
+    opacity:0;
+    transition: 0.5s;
+  }
+  .menu-item a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    line-height: 60px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    pointer-events: none;
+    transition: 0.85s;
+  }
+  
+  .menu-item a:hover {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 5px;
+  }
+  
+  .menu-toggler:checked ~ ul .menu-item {
+    opacity: 1;
+  }
+  
+  .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
+    transform: rotate(0deg) translateX(-250px);
+  }
+  
+  .menu-toggler:checked ~ ul .menu-item:nth-child(2) {
+    transform: rotate(60deg) translateX(-250px);
+  }
+  .menu-toggler:checked ~ ul .menu-item:nth-child(3) {
+    transform: rotate(120deg) translateX(-250px);
+  }
+  .menu-toggler:checked ~ ul .menu-item:nth-child(4) {
+    transform: rotate(180deg) translateX(-250px);
+  }
+  .menu-toggler:checked ~ ul .menu-item:nth-child(5) {
+    transform: rotate(240deg) translateX(-250px);
+  }
+  .menu-toggler:checked ~ ul .menu-item:nth-child(6) {
+    transform: rotate(300deg) translateX(-250px);
+  }
+  
+  .menu-item:nth-child(1) a {
+    transform: rotate(0deg);
+  }
+  .menu-item:nth-child(2) a {
+    transform: rotate(-60deg);
+  }
+  .menu-item:nth-child(3) a {
+    transform: rotate(-120deg);
+  }
+  .menu-item:nth-child(4) a {
+    transform: rotate(-180deg);
+  }
+  .menu-item:nth-child(5) a {
+    transform: rotate(-240deg);
+  }
+  .menu-item:nth-child(6) a {
+    transform: rotate(-300deg);
+  }
+  
+  .menu-toggler:checked ~ ul .menu-item a {
+    pointer-events: auto;
+  }
+  
+  .fa-envelope {
+    color: #db4a39;
+  }
+  .fa-envelope:hover {
+    background-color: #db4a39;
+  }
+  
+  .fa-user {
+    color: #3b5998;
+  }
+  .fa-user:hover {
+    background-color: #3b5998;
+  }
+  
+  .fa-github {
+    color: #171515 ;
+  }
+  .fa-github:hover {
+    background-color: #171515;
+  }
+  
+  .fa-twitter-square {
+    color: #00acee;
+  }
+  
+  .fa-twitter-square:hover {
+    background-color: #00acee;
+  }
+  .fa-linkedin-square {
+    color: #0a66c2;
+  }
+  
+  .fa-linkedin-square:hover {
+    background-color: #0a66c2;
+  }
+  
+  .fa-whatsapp {
+    color: #25d366;
+  }
+  
+  .fa-whatsapp:hover {
+    background-color: #25d366;
+  }
+  
+  .menu-toggler + label {
+    width: 30px;
+    height: 5px;
+    display: block;
+    z-index: 1;
+    border-radius: 2.5px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s, top 0.5s;
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  .menu-toggler + label:before,
+  .menu-toggler + label:after {
+    width: 30px;
+    height: 5px;
+    display: block;
+    z-index: 1;
+    border-radius: 2.5px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s, top 0.5s;
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .menu-toggler + label:before {
+    top: 10px;
+  }
+  .menu-toggler + label:after {
+    top: -10px;
+  }
+  
+  .menu-toggler:hover + label,
+  .menu-toggler:hover + label:before,
+  .menu-toggler:hover + label:after {
+    background: white;
+  }
+  .menu-toggler:checked + label {
+    background: transparent;
+  }
+  .menu-toggler:checked + label:before,
+  .menu-toggler:checked + label:after {
+    top: 0;
+    width: 30px;
+    transform-origin: 50% 50%;
+  }
+  .menu-toggler:checked + label:before {
+    transform: rotate(45deg);
+  }
+  .menu-toggler:checked + label:after {
+    transform: rotate(-45deg);
+  }
+
+
+
+
+
+  .menu-toggler:checked + .menu {
+    max-height: 100vh; /* Menüyü ekran yüksekliği kadar genişlet */
+    overflow-y: auto; /* Dikey scrollbar ekle */
+  }
+  
+  .menu-toggler:checked + .menu .menu-item {
+    opacity: 1;
+  }
+
+
+
+  /* Media query for mobile */
+@media screen and (max-width: 768px) {
+    /* Mobil cihazlarda menü öğelerini yan yana sırala */
+    .menu-item {
+      position: relative; /* Mutlak pozisyonu kaldır */
+      display: inline-block; /* Öğeleri yan yana sırala */
+      opacity: 1; /* Görünürlüğü yeniden ayarla */
+     
+     
+      margin-right: px; /* Öğeler arasında boşluk bırak */
+      margin-bottom: 10px; /* Satır arasında boşluk bırak */
+      text-align: center; /* İkonları ortala */
+    }
+  
+    /* Mobil cihazlarda menü öğelerini altta sırala */
+    .menu-toggler:checked ~ ul .menu-item {
+      opacity: 1;
+      transform: none !important;
+      transition: none !important;
+    }
+  
+    /* İkon boyutunu küçült */
+    .menu-item a {
+      font-size: 40px; /* İkon boyutunu küçült */
+    }
+  
+    /* İkonların dönüşünü kaldır */
+    .menu-toggler:checked ~ ul .menu-item a {
+      transform: rotate(0deg);
+    }
+  
+
+  }
+  

@@ -12,11 +12,15 @@
   <title>Serkan - FullStack Developer.</title>
   <meta name="title" content="Serkan - FullStack Developer.">
   <meta name="description" content="Serkan Bilsel Hakkında">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Full Stack Geliştirici ve Yazılım Mühendisi. Profesyonel web çözümleri için doğru adrestesiniz.">
+  <meta name="keywords" content="full stack geliştirici, yazılım mühendisi, web geliştirme, backend geliştirici, frontend geliştirici, yazılım projeleri">
+  <meta name="author" content="Serkan Bilsel">
 
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/svg+xml">
 
   <!-- 
     - google font link
@@ -29,6 +33,10 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/menu.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
 
   <!-- 
     - preload images
@@ -37,25 +45,24 @@
   <link rel="preload" as="image" href="./assets/images/Blog.svg">
 
 </head>
-
+ 
+    
 <body>
 
-  <!-- 
-    - #HEADER
-  -->
-
+ 
   <header class="header" data-header>
     <div class="container">
-
-      <a href="#" class="logo">
-        <img src="./assets/images/android-chrome-512x512.png" width="64" height="24" alt="Serkan home">
+   
+      <a href="/" class="logo">
+        <img src="./assets/images/android-chrome-512x512.png" width="64" height="24" alt="Serkan Home">
       </a>
 
       <nav class="navbar" data-navbar>
 
+
         <div class="navbar-top">
           <a href="#" class="logo">
-            <img src="./assets/images/logo-light.svg" width="64" height="24" alt="Serkan home">
+            <img src="./assets/images/favicon-32x32.png" width="64" height="24" alt="Serkan home">
           </a>
 
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -63,7 +70,7 @@
           </button>
         </div>
 
-        <ul class="navbar-list">
+        <!-- <ul class="navbar-list">
 
           <li>
             <a href="#" class="navbar-link">Home</a>
@@ -85,7 +92,8 @@
             <a href="#" class="navbar-link">Contact</a>
           </li>
 
-        </ul>
+        </ul> -->
+       
 
         <div class="wrapper">
           <a href="mailto:serkanbilsel@gmail.com" class="contact-link">serkanbilsel@gmail.com</a>
@@ -130,6 +138,9 @@
 
 
 
+</section>
+
+
 
 
   <main>
@@ -139,11 +150,38 @@
         - #HERO
       -->
 
+
+
       <section class="section hero" aria-label="home">
         <div class="container">
 
           <figure class="hero-banner">
-            <img src="./assets/images/serkan.jpg" width="560" height="540" alt="Serkan" class="w-100" data-reveal="top">
+            <nav class="menu">
+              <input  class="menu-toggler" id="menu-toggler" type="checkbox">  <img src="./assets/images/serkan.jpg" width="560" height="540" alt="Serkan" class="w-100" data-reveal="top"></input>
+              
+              <ul>
+                <li class="menu-item">
+                  <a class="fa fa-user" target="_blank" href="./assets/SerkanBilselTr.pdf"></a>
+                </li>
+                <li class="menu-item">
+                  <a class="fa fa-envelope" href="mailto:serkanbilsel@gmail.com"></a>
+
+                </li>
+                <li class="menu-item">
+                  <a class="fa fa-github" target="_blank" href="https://github.com/serkanbilsel"></a>
+                </li>
+                <li class="menu-item">
+                  <a class="fa fa-twitter-square" target="_blank"  href="https://www.twitter.com/serkanbilsel"></a>
+                </li>
+                <li class="menu-item">
+                  <a class="fa fa-linkedin-square" target="_blank" href="https://www.linkedin.com/in/serkanbilsel"></a>
+                </li>
+                <li class="menu-item">
+                  <a class="fa fa-whatsapp" target="_blank" href="https://wa.me/+905077149058"></a>
+                </li>
+              </ul>
+            </nav>    
+          
 
 
           </figure>
@@ -155,25 +193,43 @@
             </h1>
 
             <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-
               Merhaba ben Serkan. <br>
-              2023'den beri FullStack Yazılımcı olarak projelerde yer aldım.
-              İstanbul'da yaşıyorum ve yazılım geliştirme konusunda işime karşı oldukça tutkuluyum
+              2023'den beri Full Stack Yazılımcı olarak projelerde yer aldım.
+              İstanbul'da yaşıyorum ve yazılım geliştirme konusunda işime karşı oldukça tutkuluyum.
+
+              <button class="expand-button" data-reveal="top" data-reveal-delay="0.95s"
+                onclick="toggleDescription() ">Devamı..</button>
+
+
+            <div class="detailed-description" style="display: none;">
+              Siliconmade Academy'de yazılım eğitimine başladığımda, tutkumun ve kariyerimin temellerine adım atmış oldum. 16 haftalık yoğun program boyunca Full Stack Geliştirme alanında kendi yeteneklerimi keşfettim ve %97.29'luk bir başarı oranıyla bu serüveni tamamladım. Bu süre zarfında aldığım Başarı Sertifikası, benim için sadece bir belge değil, aynı zamanda başlangıç ​​noktamdı. <a target="_blank" href="https://drive.google.com/file/d/1fWoQfhcjzh_D_fdfHJ6YAieVhUQ66f4l/view">"Sertifika Linki"</a> <br>
+             
+              Benkien.com'da çalışma deneyimim, çeşitli iş görüşmelerim ve geliştirdiğim projeler sayesinde kendimi sürekli olarak geliştirdim. Portföyümde, CV'mde ve GitHub sayfamda yer alan projelerim, sadece yazılım becerilerimi değil, aynı zamanda yaratıcılığımı ve problem çözme yeteneğimi de sergiliyor.
+              <br>
+              <br>
+              
+              Teknoloji alanındaki yeteneklerim oldukça geniş kapsamlıdır. <br> HTML5, CSS (özellikle Tailwind CSS), JavaScript, React Native ve Bootstrap gibi Frontend teknolojilerinde güçlüyüm. Kullanıcı deneyimini iyileştirmeye odaklanarak, UI/UX tasarımına büyük önem veriyorum.
+              <br>
+              <br>
+              Backend tarafında ise Asp .Net Core MVC, RESTful API, OOP, C#, Web3 ve Git Version gibi teknolojilerle çalışıyorum. Ayrıca, veritabanı yönetimi konusunda da Microsoft SQL Server'da deneyimliyim.
+              
+              Yazılım dünyasında her adımımı büyük bir tutku ve inançla atıyorum. Her yeni proje, yeni bir meydan okuma ve yeni bir öğrenme fırsatı olarak görüyorum. Kendimi sürekli geliştirmeye ve yenilikleri keşfetmeye açık olduğum sürece, bu heyecan verici yolculukta başarıya ulaşacağıma olan inancımı her zaman koruyacağım.
+
+            </div>
             </p>
 
-            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-              <a href="https://github.com/serkanbilsel" class="btn btn-primary">Github - Çalışmaları Gör</a>
-
-              <a href="https://www.linkedin.com/ambry/?x-li-ambry-ep=AQLD68UXZGWTKAAAAY5Ec4wf_wrUh2X-7liWN_eHiMhblmlyxu3uPHwwA1OzMEZSr0YYB9HRnnjOvg3nN4_8Dek5kAiCP8OSoLS7tVMeFTx2mF-0Pgq2CCxIRPVuczrK73XcQNAjFy90BTD-O6oT9xtfbXICLo6qJMJsgkJU-PIt-qNY3QiUTbetsZ2c9WkOV009oUOXvsXFeK6pQGNHXs8WO40D6gRZOXS51NrQz4Ql-L1wZwlLekPlf5iVyPrpmIcqbYq8JUSUMkJpP0U9nBO0gqXl2eWWKydPSD9ZO2ECEYUCDWlwSLySy6riCdcOuyYbIyGxyjpLoXFuscIcGx5bAD0gb4E3BvDANs_L-rO7D1xKHmLsaiQ3SP68ilkUGBcnrWQJKY8DSGbVe0SFZFfdtjDRkL3v-m8rpntz5-i7hBR10UJNV-3Uie-wW-7-6K9rmUO49ruzqsY0eQ5Lx7KdLiwaF93bxebcqXf5yx_aPaAMEuSOufQl-evdot21uRPsclXoaswUX-KW4qoQT6qf8xW2LZLMus7k6At4mV6ULK9q6sT9r_T-5coORzRJsPrB4ZY" class="btn btn-secondary">Cv İndir</a>
-            </div>
 
           </div>
+        </div>
+        </div>
+        </div>
 
         </div>
       </section>
+<br>
 
 
-
+    
 
 
       <!-- 
@@ -196,6 +252,7 @@
                 Ayrıca, React Native ile Frontend & mobil geliştirme üzerinde çalışıyorum.
               </p>
             </div>
+
 
             <ul class="progress-list" data-reveal="right">
 
@@ -224,6 +281,8 @@
                 <div class="progress">
                   <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
                 </div>
+
+
 
               </li>
 
@@ -264,10 +323,49 @@
         </div>
       </section>
 
+   
+      
+      <div class="title-wrapper" data-reveal="bottom">
+      <div  class="section-title-container " >
 
+      
+        <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">YETENEKLERİM</h1>
+        
+      </div>
 
+      <div class="skills-container">
+        <div class="skill-category">
+       
+          <h3 class="skill-category-title">Frontend</h3>
+          <ul class="skill-list">
+            <p class="section-text">
+            <li class="skill">Html5</li>
+            <li class="skill">Css - Tailwind CSS</li>
+            <li class="skill">JavaScript</li>
+            <li class="skill">React Native</li>
+            <li class="skill">Bootstrap</li>
+            <li class="skill">UI/UX Desing</li>
+            
+          </ul>
+        </div>
 
-
+        <div class="skill-category">
+          <h3 class="skill-category-title">Backend</h3>
+          <ul class="skill-list">
+            <li class="skill">Asp .Net Core MVC</li>
+            <li class="skill">RESTful API</li>
+            <li class="skill">OOP</li>
+            <li class="skill">C#</li>
+            <li class="skill">Web3</li>
+            <li class="skill">Git Version</li>
+            <li class="skill">Microsoft SQL Server</li>
+          </p>
+          </ul>
+        </div>
+       
+      </div>
+      </div>
+     
       <!-- 
         - #PROJECT
       -->
@@ -306,8 +404,7 @@
                     Digital dönüşüm ile web uygulaması üzerinden yönetilecek bir şirket yönetim paneli + web yüzü.
                   </p>
 
-                  <a href="https://www.benkien.com" class="btn-text"
-                    style="color: #a07cc5">
+                  <a href="https://www.benkien.com" class="btn-text" style="color: #a07cc5">
                     <span class="span">Web Site</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -316,9 +413,8 @@
                 </div>
 
                 <figure class="card-banner" data-reveal="right">
-                  <img
-                    src="./assets/images/benkien.jpg"
-                    width="650" height="370" loading="lazy" alt="Benkien.com" class="w-100">
+                  <img src="./assets/images/benkien.jpg" width="650" height="370" loading="lazy" alt="Benkien.com"
+                    class="w-100">
                 </figure>
 
               </div>
@@ -355,7 +451,7 @@
                 </div>
 
                 <figure class="card-banner" data-reveal="left">
-                  <img src="./assets/images/project-2.png" width="600" height="367" loading="lazy" alt="Web Design"
+                  <img src="./assets/images/hospital.png" width="600" height="367" loading="lazy" alt="Web Design"
                     class="w-100">
                 </figure>
 
@@ -372,7 +468,7 @@
                   <h3 class="h3 card-title">Cargomda Copy Work </h3>
 
                   <p class="card-text">
-                   Cargomda.com 'un web ön yüzünü pratik için kopyalama çalışması
+                    Cargomda.com 'un web ön yüzünü pratik için kopyalama çalışması
                   </p>
 
                   <a href="https://serkanbilsel.github.io/Cargomda.com-Copy/" class="btn-text" style="color: #7cb798">
@@ -384,8 +480,7 @@
                 </div>
 
                 <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/cargomda.png" height="367" loading="lazy" alt="Web Design"
-                    class="w-100">
+                  <img src="./assets/images/cargomda.png" height="367" loading="lazy" alt="Web Design" class="w-100">
                 </figure>
 
               </div>
@@ -433,7 +528,7 @@
         - #CONTACT
       -->
 
-   
+
     </article>
   </main>
 
@@ -466,6 +561,8 @@
   <!-- 
     - custom js link
   -->
+
+
   <script src="./assets/js/script.js"></script>
 
   <!-- 
