@@ -88,33 +88,9 @@ window.addEventListener("load", reveal);
   }
 
 
-  window.addEventListener('scroll', function() {
-    var element = document.querySelector('.title-wrapper'); // Görünürlüğü kontrol edilecek elementin seçimi
-
-    var position = element.getBoundingClientRect(); // Elementin pozisyon bilgisini al
-
-    // Sayfa üzerinde elementin görünür olup olmadığını kontrol et
-    if (position.top >= 0 && position.bottom <= window.innerHeight) {
-        element.classList.add('revealed'); // Element görünür alan içindeyse ilgili CSS sınıfını ekle
-    } else {
-        element.classList.remove('revealed'); // Element görünür alan dışında ise ilgili CSS sınıfını kaldır
-    }
-});
 
 
 
-window.addEventListener('scroll', function() {
-  var element = document.querySelector('.title-wrapper'); // Görünürlüğü kontrol edilecek elementin seçimi
-
-  var position = element.getBoundingClientRect(); // Elementin pozisyon bilgisini al
-
-  // Sayfa üzerinde elementin görünür olup olmadığını kontrol et
-  if (position.top >= 0 && position.bottom <= window.innerHeight) {
-      element.classList.add('revealed'); // Element görünür alan içindeyse ilgili CSS sınıfını ekle
-  } else {
-      element.classList.remove('revealed'); // Element görünür alan dışında ise ilgili CSS sınıfını kaldır
-  }
-});
 // JavaScript code
 document.addEventListener('DOMContentLoaded', function () {
   const menuToggler = document.getElementById('menu-toggler');
@@ -158,3 +134,8 @@ if (/Mobi|Android/i.test(navigator.userAgent)) {
     document.getElementById('menu-toggler').checked = true;
   });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggler = document.getElementById('menu-toggler');
+  menuToggler.checked = true; // sayfa yüklendiğinde menüyü otomatik olarak açmak için menü toggle'ını işaretleyin
+});

@@ -299,7 +299,7 @@ body.nav-active { overflow: hidden; }
 .section { padding-block: var(--section-padding); }
 
 .w-100 { width: 100%; 
- 
+
 }
 
 .h1,
@@ -349,7 +349,7 @@ body.nav-active { overflow: hidden; }
 
 [data-reveal] {
   opacity: 0;
-  transition: 0.85s ease;
+  transition: 0.35s ease;
 }
 
 [data-reveal="top"] { transform: translateY(-30px); }
@@ -500,17 +500,19 @@ body.nav-active { overflow: hidden; }
   margin-inline: auto;
 }
 
+
+
 .hero-banner .w-100 {
-  mask-image: url("../images/Blob.svg");
-  -webkit-mask-image: url("../images/Blog.svg");
+
   mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat; /* Webkit için gerekli */
   mask-position: center;
-  -webkit-mask-position: center;
-  mask-size: auto;
-  -webkit-mask-size: auto;
-  
+  -webkit-mask-position: center; /* Webkit için gerekli */
+  mask-size: contain; /* Maske boyutunu belirtiyoruz */
+  -webkit-mask-size: contain; /* Webkit için gerekli */
+  border-radius: 50%; /* Kenarlık yuvarlak olacak */
 }
+
 
 .hero .shape {
   position: absolute;

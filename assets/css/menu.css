@@ -1,7 +1,5 @@
 
-.hero-banner {
-  position: relative;
-}
+
 
 .menu {
   position: relative;
@@ -119,15 +117,6 @@
   width: 30px;
   transform-origin: 50% 50%;
   transform: rotate(-45deg);
-}
-
-.image {
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
   
@@ -355,15 +344,15 @@
   /* Media query for mobile */
 @media screen and (max-width: 768px) {
     /* Mobil cihazlarda menü öğelerini yan yana sırala */
+
+    
     .menu-item {
       position: relative; /* Mutlak pozisyonu kaldır */
       display: inline-block; /* Öğeleri yan yana sırala */
       opacity: 1; /* Görünürlüğü yeniden ayarla */
-     
-     
-      margin-right: px; /* Öğeler arasında boşluk bırak */
-      margin-bottom: 10px; /* Satır arasında boşluk bırak */
-      text-align: center; /* İkonları ortala */
+      flex-wrap: wrap;
+
+      
     }
   
     /* Mobil cihazlarda menü öğelerini altta sırala */
@@ -375,7 +364,8 @@
   
     /* İkon boyutunu küçült */
     .menu-item a {
-      font-size: 40px; /* İkon boyutunu küçült */
+      font-size: 7vw; /* İkon boyutunu ayarlar */
+
     }
   
     /* İkonların dönüşünü kaldır */
@@ -386,3 +376,4 @@
 
   }
   
+
