@@ -139,8 +139,8 @@
   .menu-item a:hover {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
     color: white;
-    font-size: 55px; /* Yazı boyutunu artırabilirsiniz */
-    opacity: 1; /* Aktif olduğunda tamamen görünür olmasını sağlar */
+    font-size: 55px; 
+    opacity: 1; 
   }
   
   
@@ -331,8 +331,8 @@
 
 
   .menu-toggler:checked + .menu {
-    max-height: 100vh; /* Menüyü ekran yüksekliği kadar genişlet */
-    overflow-y: auto; /* Dikey scrollbar ekle */
+    max-height: 100vh; 
+  
   }
   
   .menu-toggler:checked + .menu .menu-item {
@@ -341,34 +341,34 @@
 
 
 
-  /* Media query for mobile */
+  
 @media screen and (max-width: 768px) {
-    /* Mobil cihazlarda menü öğelerini yan yana sırala */
+   
 
     
     .menu-item {
-      position: relative; /* Mutlak pozisyonu kaldır */
-      display: inline-block; /* Öğeleri yan yana sırala */
-      opacity: 1; /* Görünürlüğü yeniden ayarla */
+      position: relative; 
+      display: inline-block; 
+      opacity: 1; 
       flex-wrap: wrap;
 
       
     }
   
-    /* Mobil cihazlarda menü öğelerini altta sırala */
+  
     .menu-toggler:checked ~ ul .menu-item {
       opacity: 1;
       transform: none !important;
       transition: none !important;
     }
   
-    /* İkon boyutunu küçült */
+
     .menu-item a {
-      font-size: 7vw; /* İkon boyutunu ayarlar */
+      font-size: 7vw; 
 
     }
   
-    /* İkonların dönüşünü kaldır */
+   
     .menu-toggler:checked ~ ul .menu-item a {
       transform: rotate(0deg);
     }

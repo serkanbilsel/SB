@@ -5,50 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tags
-  -->
   <title>Serkan - FullStack Developer.</title>
   <meta name="title" content="Serkan - FullStack Developer.">
-  <meta name="description" content="Serkan Bilsel Hakkında">
+  <meta name="description" content="About Serkan Bilsel">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Full Stack Geliştirici ve Yazılım Mühendisi. Profesyonel web çözümleri için doğru adrestesiniz.">
-  <meta name="keywords" content="full stack geliştirici, yazılım mühendisi, web geliştirme, backend geliştirici, frontend geliştirici, yazılım projeleri">
+  <meta name="description" content="Full Stack Developer and Software Engineer. Your go-to source for professional web solutions.">
+  <meta name="keywords" content="full stack developer, software engineer, web development, backend developer, frontend developer, software projects, mobile application, react react native, software, web software, crypto, cryptocurrency">
   <meta name="author" content="Serkan Bilsel">
-
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/svg+xml">
-
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/menu.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.5.207/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
 
-
-  <!-- 
-    - preload images
-  -->
   <link rel="preload" as="image" href="./assets/images/serkan.jpg">
-  <link rel="preload" as="image" href="./assets/images/Blog.svg">
-
 </head>
- 
-    
 <body>
-
- 
+  
   <header class="header" data-header>
     <div class="container">
    
@@ -57,8 +34,6 @@
       </a>
 
       <nav class="navbar" data-navbar>
-
-
         <div class="navbar-top">
           <a href="#" class="logo">
             <img src="./assets/images/favicon-32x32.png" width="64" height="24" alt="Serkan home">
@@ -69,61 +44,33 @@
           </button>
         </div>
 
-        <!-- <ul class="navbar-list">
-
-          <li>
-            <a href="#" class="navbar-link">Home</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">About</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Projects</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Blog</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Contact</a>
-          </li>
-
-        </ul> -->
-       
-
         <div class="wrapper">
           <a href="mailto:serkanbilsel@gmail.com" class="contact-link">serkanbilsel@gmail.com</a>
-
           <a href="tel:+905077149058" class="contact-link">+90 507 714 90 58</a>
         </div>
 
         <ul class="social-list">
-
           <li>
-            <a href="https://twitter.com/serkanbilsel" class="social-link">
+            <a href="https://twitter.com/serkanbilsel" class="social-link" target="_blank">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
-
-
           <li>
-            <a href="https://www.linkedin.com/in/serkanbilsel/" class="social-link">
+            <a href="https://www.linkedin.com/in/serkanbilsel/" class="social-link" target="_blank">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-
           <li>
-            <a href="https://github.com/serkanbilsel" class="social-link">
+            <a href="https://github.com/serkanbilsel" class="social-link" target="_blank">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
-
-
+          <li>
+            <a href="https://www.bionluk.com/serkanbilsel" class="social-link" target="_blank">
+              <img src="https://play-lh.googleusercontent.com/XDKGzDD_jjY_KrqZg3COTdV9oW5e4lZjgOPGP07aOIaNsCqNdvcmVrocc7XFr01PdR0P" alt="Bionluk" style="width: 20px; height: 20px;">
+            </a>
+          </li>
         </ul>
-
       </nav>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -131,46 +78,30 @@
       </button>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
-
     </div>
   </header>
 
-
-
-</section>
-
-
-
-
   <main>
     <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-
-
       <section class="section hero" aria-label="home">
         <div class="container">
-
           <figure class="hero-banner">
             <nav class="menu">
-              <input  class="menu-toggler" id="menu-toggler" type="checkbox">  <img src="./assets/images/serkan.jpg" width="560" height="540" alt="Serkan" class="w-100" data-reveal="top"></input>
-              
+              <input class="menu-toggler" id="menu-toggler" type="checkbox">
+              <img src="./assets/images/serkan.jpg" width="560" height="540" alt="Serkan" class="w-100" data-reveal="top">
+              </input>
               <ul>
                 <li class="menu-item">
                   <a class="fa fa-user" target="_blank" href="./assets/SerkanBilselTr.pdf"></a>
                 </li>
                 <li class="menu-item">
                   <a class="fa fa-envelope" href="mailto:serkanbilsel@gmail.com"></a>
-
                 </li>
                 <li class="menu-item">
                   <a class="fa fa-github" target="_blank" href="https://github.com/serkanbilsel"></a>
                 </li>
                 <li class="menu-item">
-                  <a class="fa fa-twitter-square" target="_blank"  href="https://www.twitter.com/serkanbilsel"></a>
+                  <a class="fa fa-twitter-square" target="_blank" href="https://www.twitter.com/serkanbilsel"></a>
                 </li>
                 <li class="menu-item">
                   <a class="fa fa-linkedin-square" target="_blank" href="https://www.linkedin.com/in/serkanbilsel"></a>
@@ -179,397 +110,351 @@
                   <a class="fa fa-whatsapp" target="_blank" href="https://wa.me/+905077149058"></a>
                 </li>
               </ul>
-            </nav>    
-          
-
-
+            </nav>
           </figure>
-
           <div class="hero-content">
-
             <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-              I'm Full Stack Developer
+              I'm a Full Stack Developer
             </h1>
-
             <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-              Merhaba ben Serkan. <br>
-              2023'den beri Full Stack Yazılımcı olarak projelerde yer aldım.
-              İstanbul'da yaşıyorum ve yazılım geliştirme konusunda işime karşı oldukça tutkuluyum.
-
-              <button class="expand-button" data-reveal="top" data-reveal-delay="0.95s"
-                onclick="toggleDescription() ">Devamı..</button>
-
-
-            <div class="detailed-description" style="display: none;">
-              Siliconmade Academy'de yazılım eğitimine başladığımda, tutkumun ve kariyerimin temellerine adım atmış oldum. 16 haftalık yoğun program boyunca Full Stack Geliştirme alanında kendi yeteneklerimi keşfettim ve %97.29'luk bir başarı oranıyla bu serüveni tamamladım. Bu süre zarfında aldığım Başarı Sertifikası, benim için sadece bir belge değil, aynı zamanda başlangıç ​​noktamdı. <a target="_blank" href="https://drive.google.com/file/d/1fWoQfhcjzh_D_fdfHJ6YAieVhUQ66f4l/view">"Sertifika Linki"</a> <br>
-             
-              Benkien.com'da çalışma deneyimim, çeşitli iş görüşmelerim ve geliştirdiğim projeler sayesinde kendimi sürekli olarak geliştirdim. Portföyümde, CV'mde ve GitHub sayfamda yer alan projelerim, sadece yazılım becerilerimi değil, aynı zamanda yaratıcılığımı ve problem çözme yeteneğimi de sergiliyor.
-              <br>
-              <br>
-              
-              Teknoloji alanındaki yeteneklerim oldukça geniş kapsamlıdır. <br> HTML5, CSS (özellikle Tailwind CSS), JavaScript, React Native ve Bootstrap gibi Frontend teknolojilerinde güçlüyüm. Kullanıcı deneyimini iyileştirmeye odaklanarak, UI/UX tasarımına büyük önem veriyorum.
-              <br>
-              <br>
-              Backend tarafında ise Asp .Net Core MVC, RESTful API, OOP, C#, Web3 ve Git Version gibi teknolojilerle çalışıyorum. Ayrıca, veritabanı yönetimi konusunda da Microsoft SQL Server'da deneyimliyim.
-              
-              Yazılım dünyasında her adımımı büyük bir tutku ve inançla atıyorum. Her yeni proje, yeni bir meydan okuma ve yeni bir öğrenme fırsatı olarak görüyorum. Kendimi sürekli geliştirmeye ve yenilikleri keşfetmeye açık olduğum sürece, bu heyecan verici yolculukta başarıya ulaşacağıma olan inancımı her zaman koruyacağım.
-
-            </div>
+              Serkan Bilsel, born in Istanbul, is a Full Stack Developer with a deep passion for software development. With intermediate English proficiency, he can actively participate in international projects.
+              <button class="expand-button" data-reveal="top" data-reveal-delay="0.95s" onclick="openModal()">Read More</button>
             </p>
-
-
           </div>
-        </div>
-        </div>
-        </div>
-
-        </div>
       </section>
-<br>
 
+      <br>
 
-    
+      <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+            Serkan Bilsel, born in Istanbul, is a Full Stack Developer with a deep passion for software development. With intermediate English proficiency, he can actively participate in international projects.
+            
+      <p class="section-text">
+        He graduated from Siliconmade Academy's C# ASP.NET Core Full Stack course with a success rate of 97.29%, making a strong entry into the world of software development. He also completed advanced frontend training on React and React Native.
+        <br><br>
+        Serkan started his career as a Full Stack Developer at a startup, where he developed an ERP system that strengthened the company’s digital infrastructure. After this 5-month experience, he transitioned to freelance work and has successfully delivered many projects for both domestic and international clients. His notable projects include cryptocurrency promotion websites and competitive web applications for the real estate sector.
+        <br><br>
+        Serkan has expertise in advanced technologies like SQL, Dapper, SignalR, C# ASP.NET Core, N architecture, and Onion architecture. He can write SQL queries to generate statistical analyses and efficiently use DTOs with Entity Framework in his projects. He is skilled in developing API services and managing projects from start to finish, ensuring both technical proficiency and a user-friendly interface. He creates modern, interactive, and animated web applications using React and high-performance mobile applications with React Native for both Android and iOS platforms.
+      </p>
+          </p>
+        </div>
+      </div>
 
+      <br>
 
-      <!-- 
-        - #ABOUT
-      -->
+    </article>
 
-      <section class="section about" aria-label="about">
-        <div class="container">
+    <section class="section project" aria-labelledby="project-label">
+      <div class="container">
+        <div class="title-wrapper" data-reveal="top">
+          <div>
+            <h2 class="h2 section-title" id="project-label">My Projects</h2>
+            <p class="section-text">You can explore the projects I have written or contributed to.</p>
+          </div>
+          <br><br>
+          <a href="https://github.com/serkanbilsel" target="_blank" class="btn btn-secondary">All Projects - Github</a>
+        </div>
 
-          <div class="wrapper">
+        <div class="slider-container">
+          <div class="slider">
 
-            <div data-reveal="left">
-              <h2 class="h2 section-title">Neler Yapıyorum?</h2>
-
-              <p class="section-text">
-
-
-                Uzmanlık alanım ASP .Net Core'da. Bu backend mimarisi içinde onion architecture, n-tier architecture,
-                CI/CD ve backend RESTful API geliştirme konularında yeteneklere sahibim.
-                Ayrıca, React Native ile Frontend & mobil geliştirme üzerinde çalışıyorum.
-              </p>
+            <div class="slider-item">
+              <div class="project-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/city.png" alt="Cityemlak.net" class="slider-img" />
+                </figure>
+                <div class="card-content">
+                  <h3 class="card-title">Cityemlak.net</h3>
+                  <p class="card-tag">Fullstack Professional Website</p>
+                  <p class="card-text">
+                    An ERP application + Web management panel + SEO work for a real estate agent looking to build a corporate identity and increase market share.
+                  </p>
+                  <a href="https://www.cityemlak.net" class="btn-text">Website Link</a>
+                </div>
+              </div>
             </div>
 
-
-            <ul class="progress-list" data-reveal="right">
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Backend / With - Asp .Net Core</p>
-
-                  <span class="span">90 %</span>
+            <div class="slider-item">
+              <div class="project-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/rickandmorty.png" alt="RickandMortyApp" class="slider-img" />
+                </figure>
+                <div class="card-content">
+                  <h3 class="card-title">Rick And Morty</h3>
+                  <p class="card-tag">React Native Mobile App</p>
+                  <p class="card-text">
+                    I implemented caching using AsyncStorage to optimize API data retrieval and performed operations like storing favorite characters locally.
+                  </p>
+                  <a href="https://github.com/serkanbilsel/RickandMortyApp" class="btn-text">Github Link</a>
                 </div>
+              </div>
+            </div>
 
-                <div class="progress">
-                  <div class="progress-fill" style="width: 90%; background-color: #c7b1dd"></div>
+            <div class="slider-item">
+              <div class="project-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/benkien.jpg" alt="Benkien" class="slider-img" />
+                </figure>
+                <div class="card-content">
+                  <h3 class="card-title">Benkien E-Commerce</h3>
+                  <p class="card-tag">FullStack</p>
+                  <p class="card-text">
+                    A company management panel + web interface for Benkien.com, which aimed to handle e-commerce, manage the company’s entire digital transformation, income/expense tables, and sales figures via a web application.
+                  </p>
+                  <a href="https://www.benkien.com" class="btn-text">Website Link</a>
                 </div>
+              </div>
+            </div>
 
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Frontend & Mobile - React Native</p>
-
-                  <span class="span">80 %</span>
+            <div class="slider-item">
+              <div class="project-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/hospital.png" alt="Hospital App" class="slider-img" />
+                </figure>
+                <div class="card-content">
+                  <h3 class="card-title">Hospital App</h3>
+                  <p class="card-tag">Backend</p>
+                  <p class="card-text">
+                    A management system panel for hospitals. Features include scheduling patient appointments, introducing doctors, and presenting hospital services and clinics.
+                  </p>
+                  <a href="https://github.com/serkanbilsel/HospitalApps" class="btn-text">Github Link</a>
                 </div>
+              </div>
+            </div>
 
-                <div class="progress">
-                  <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
+            <div class="slider-item">
+              <div class="project-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/meme.png" alt="RealMeme" class="slider-img" />
+                </figure>
+                <div class="card-content">
+                  <h3 class="card-title">RealMeme - Crypto Project</h3>
+                  <p class="card-tag">Frontend Design with React</p>
+                  <p class="card-text">
+                    Frontend design of a token project based in Canada using React.
+                  </p>
+                  <a href="https://www.realmeme.ai" class="btn-text">Website Link</a>
                 </div>
+              </div>
+            </div>
 
-
-
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Development</p>
-
-                  <span class="span">85 %</span>
+            <div class="slider-item">
+              <div class="project-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/getir.png" alt="Getir Clone" class="slider-img" />
+                </figure>
+                <div class="card-content">
+                  <h3 class="card-title">Getir Clone - React Native</h3>
+                  <p class="card-tag">React Native & Redux</p>
+                  <p class="card-text">
+                    In this project, I implemented state management and cart operations using Redux. Added product operations and total price calculations were performed with Redux, offering a modern e-commerce experience with a sleek user interface.
+                  </p>
+                  <a href="https://github.com/serkanbilsel/GetirCloneReactNative" class="btn-text">Github Link</a>
                 </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 85%; background-color: #b0d4c1"></div>
-                </div>
-
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Sql</p>
-
-                  <span class="span">70 %</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 70%; background-color: #e3a6b6"></div>
-                </div>
-
-              </li>
-
-            </ul>
+              </div>
+            </div>
 
           </div>
 
-
-
+          <div class="slider-controls">
+            <button class="prev-btn">&#10094;</button>
+            <button class="next-btn">&#10095;</button>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-   
-      
-      <div class="title-wrapper" data-reveal="bottom">
-      <div  class="section-title-container " >
+    <section class="section about" aria-label="about">
+      <div class="container">
+        <div class="wrapper">
+          <div data-reveal="left">
+            <h2 class="h2 section-title">What Do I Do?</h2>
+            <p class="section-text">
+              I focus on producing innovative and solution-oriented projects in the world of software development. I specialize in <strong>ASP.NET Core</strong>, implementing advanced architectures like <strong>onion architecture</strong> and <strong>n-tier architecture</strong> to build robust, scalable, and secure solutions.
+              <br><br>
+              On the backend, I have extensive experience in <strong>RESTful API</strong> development, SQL, and database management. Additionally, I develop user-friendly interfaces and mobile applications using modern frontend technologies like <strong>React</strong>, <strong>Redux</strong>, and <strong>React Navigation</strong>.
+              <br><br>
+              I am experienced in integrating cloud services like <strong>Firebase</strong> into my projects, offering fast and reliable data management solutions. I possess the ability to manage projects end-to-end, handling both frontend and backend development.
+              <br><br>
+              I consistently deliver effective results through my projects’ powerful technologies, whether working individually or as part of a team. I provide digital transformation solutions that give companies a competitive edge, focusing on client-oriented approaches to streamline business processes with web and mobile solutions.
+            </p>
+          </div>
 
-      
-        <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.1s">YETENEKLERİM</h1>
-        
+          <ul class="progress-list" data-reveal="right">
+            <li class="progress-item">
+              <div class="label-wrapper">
+                <p>Backend Development - ASP.NET Core</p>
+                <span class="span">90 %</span>
+              </div>
+              <div class="progress">
+                <div class="progress-fill" style="width: 90%; background-color: #c7b1dd"></div>
+              </div>
+            </li>
+
+            <li class="progress-item">
+              <div class="label-wrapper">
+                <p>Frontend & Mobile - React Native</p>
+                <span class="span">80 %</span>
+              </div>
+              <div class="progress">
+                <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
+              </div>
+            </li>
+
+            <li class="progress-item">
+              <div class="label-wrapper">
+                <p>React API & Redux</p>
+                <span class="span">85 %</span>
+              </div>
+              <div class="progress">
+                <div class="progress-fill" style="width: 85%; background-color: #b0d4c1"></div>
+              </div>
+            </li>
+
+            <li class="progress-item">
+              <div class="label-wrapper">
+                <p>Firebase Integration</p>
+                <span class="span">75 %</span>
+              </div>
+              <div class="progress">
+                <div class="progress-fill" style="width: 75%; background-color: #a6d1e3"></div>
+              </div>
+            </li>
+
+            <li class="progress-item">
+              <div class="label-wrapper">
+                <p>SQL & Database Management</p>
+                <span class="span">60 %</span>
+              </div>
+              <div class="progress">
+                <div class="progress-fill" style="width: 60%; background-color: #e3a6b6"></div>
+              </div>
+            </li>
+
+            <li class="progress-item">
+              <div class="label-wrapper">
+                <p>Entity Framework & ORM</p>
+                <span class="span">85 %</span>
+              </div>
+              <div class="progress">
+                <div class="progress-fill" style="width: 85%; background-color: #d1c4e3"></div>
+              </div>
+            </li>
+
+            <li class="progress-item">
+              <div class="label-wrapper">
+                <p>Agile Methodologies</p>
+                <span class="span">80 %</span>
+              </div>
+              <div class="progress">
+                <div class="progress-fill" style="width: 80%; background-color: #ffdbb6"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="title-wrapper" data-reveal="bottom">
+      <div class="section-title-container">
+        <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.1s">My Skills</h1>
       </div>
 
       <div class="skills-container">
         <div class="skill-category">
-       
           <h3 class="skill-category-title">Frontend</h3>
           <ul class="skill-list">
-            <p class="section-text">
-            <li class="skill">Html5</li>
-            <li class="skill">Css - Tailwind CSS</li>
+            <li class="skill">TypeScript</li>
             <li class="skill">JavaScript</li>
+            <li class="skill">CSS - Tailwind CSS</li>
+            <li class="skill">React</li>
             <li class="skill">React Native</li>
-            <li class="skill">Bootstrap</li>
-            <li class="skill">UI/UX Desing</li>
-            
+            <li class="skill">UI/UX Design</li>
+            <li class="skill">Redux</li>
+            <li class="skill">React Navigation</li>
           </ul>
         </div>
 
         <div class="skill-category">
           <h3 class="skill-category-title">Backend</h3>
           <ul class="skill-list">
-            <li class="skill">Asp .Net Core MVC</li>
+            <li class="skill">ASP.NET Core MVC</li>
             <li class="skill">RESTful API</li>
             <li class="skill">OOP</li>
             <li class="skill">C#</li>
-            <li class="skill">Web3</li>
-            <li class="skill">Git Version</li>
+            <li class="skill">Entity Framework</li>
+            <li class="skill">Dapper</li>
             <li class="skill">Microsoft SQL Server</li>
-          </p>
+            <li class="skill">Git & Version Control</li>
+            <li class="skill">Firebase</li>
           </ul>
         </div>
-       
       </div>
-      </div>
-     
-      <!-- 
-        - #PROJECT
-      -->
+    </div>
 
-      <section class="section project" aria-labelledby="project-label">
-        <div class="container">
+    <section class="section pdf-slider" aria-labelledby="pdf-slider-label">
+      <div class="container">
+        <div class="title-wrapper" data-reveal="top">
+          <h2 class="h2 section-title" id="pdf-slider-label">My Certifications</h2>
+          <p class="section-text">Click on the certifications below to view them in full screen.</p>
+        </div>
 
-          <div class="title-wrapper" data-reveal="top">
-
-            <div>
-              <h2 class="h2 section-title" id="project-label">Projelerim</h2>
-
-              <p class="section-text">
-                Yazdığım & Katkıda bulunduğum projelere göz atabilirsiniz.
-              </p>
+        <div class="pdf-slider-container">
+          <div class="pdf-slider">
+            <div class="pdf-slider-item" data-pdf="assets/files/SerkanBilsel1.pdf" onclick="openPDF('assets/files/SerkanBilsel1.pdf')">
+              <canvas class="pdf-thumbnail"></canvas>
+              <p>Serkan Bilsel Lvl 1</p>
             </div>
 
-            <a href="https://github.com/serkanbilsel" class="btn btn-secondary">See All Projects - Github</a>
+            <div class="pdf-slider-item" data-pdf="assets/files/SerkanBilsellvl2.pdf" onclick="openPDF('assets/files/SerkanBilsellvl2.pdf')">
+              <canvas class="pdf-thumbnail"></canvas>
+              <p>Serkan Bilsel Lvl 2</p>
+            </div>
 
+            <div class="pdf-slider-item" data-pdf="assets/files/SerkanBilsellvl3.pdf" onclick="openPDF('assets/files/SerkanBilsellvl3.pdf')">
+              <canvas class="pdf-thumbnail"></canvas>
+              <p>Serkan Bilsel Lvl 3</p>
+            </div>
+
+            <div class="pdf-slider-item" data-pdf="assets/files/SerkanBilselICCW.pdf" onclick="openPDF('assets/files/SerkanBilselICCW.pdf')">
+              <canvas class="pdf-thumbnail"></canvas>
+              <p>Serkan Bilsel CCW</p>
+            </div>
+
+            <div class="pdf-slider-item" data-pdf="assets/files/SerkanBilselFSMSEM.pdf" onclick="openPDF('assets/files/SerkanBilselFSMSEM.pdf')">
+              <canvas class="pdf-thumbnail"></canvas>
+              <p>Serkan Bilsel FSMSEM</p>
+            </div>
           </div>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="project-card project-card-1" style="background-color: #f8f5fb">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class="card-tag" style="color: #a07cc5">FullStack</p>
-
-                  <h3 class="h3 card-title">Benkien</h3>
-
-                  <p class="card-text">
-                    E-ticaret yapmayı amaçlayan Benkien.com 'un, tüm şirket yönetimi, gelir gider tabloları, satış
-                    rakamları vb gibi
-                    Digital dönüşüm ile web uygulaması üzerinden yönetilecek bir şirket yönetim paneli + web yüzü.
-                  </p>
-
-                  <a href="https://www.benkien.com" class="btn-text" style="color: #a07cc5">
-                    <span class="span">Web Site</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/benkien.jpg" width="650" height="370" loading="lazy" alt="Benkien.com"
-                    class="w-100">
-                </figure>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card project-card-2" style="background-color: #f1f5fd">
-
-                <div class="card-content" data-reveal="right">
-
-                  <p class=" card-tag" style="color: #3f78e0">Backend</p>
-
-                  <h3 class="h3 card-title">Hospital App</h3>
-
-                  <p class="card-text">
-                    Hastane yönetmek için gerekli bir yönetim sistemi panelidir. Hastanenizi etkili bir sunumla
-                    tanıtmanızı amaçlar. <br>
-                    Hasta randevusu almak <br>
-                    Doktor tanıtımı<br>
-                    Servis - Poliklinik Tanıtımı<br>
-                    Hizmetlerin tanıtımı<br>
-                    İlgili dökümanların paylaşımı<br>
-                    Hastane ile iletişim
-
-
-                  </p>
-
-                  <a href="https://github.com/serkanbilsel/HospitalApps" class="btn-text" style="color: #3f78e0">
-                    <span class="span">Github Link</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="left">
-                  <img src="./assets/images/hospital.png" width="600" height="367" loading="lazy" alt="Web Design"
-                    class="w-100">
-                </figure>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card project-card-3" style="background-color: #f5faf7">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class=" card-tag" style="color: #7cb798">Copy Work</p>
-
-                  <h3 class="h3 card-title">Cargomda Copy Work </h3>
-
-                  <p class="card-text">
-                    Cargomda.com 'un web ön yüzünü pratik için kopyalama çalışması
-                  </p>
-
-                  <a href="https://serkanbilsel.github.io/Cargomda.com-Copy/" class="btn-text" style="color: #7cb798">
-                    <span class="span">Github Link</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/cargomda.png" height="367" loading="lazy" alt="Web Design" class="w-100">
-                </figure>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card project-card-4" style="background-color: #fcf4f6">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class=" card-tag" style="color: #d16b86">Mobile Design</p>
-
-                  <h3 class="h3 card-title">Social Media App</h3>
-
-                  <p class="card-text">
-                    Sosyal Medya analiz arayüzü tasarımı
-                  </p>
-
-                  <a href="https://serkanbilsel.github.io/React-Hometraining/" class="btn-text" style="color: #d16b86">
-                    <span class="span">Github Link</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/socialmedia.png" width="620" height="370" loading="lazy" alt="Mobile Design"
-                    class="w-100">
-                </figure>
-
-              </div>
-            </li>
-
-          </ul>
-
         </div>
-      </section>
+      </div>
+    </section>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul class="footer-contact">
+              <li>&#9993; serkanbilsel@gmail.com</li>
+              <li>&#9742; +90 507 714 90 58</li>
+              <li>&#9873; Istanbul, Turkey</li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="footer-bottom">
+          <p>© 2024 Serkan Bilsel</p>
+        </div>
+      </div>
+    </footer>
 
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/langue.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
-      <!-- 
-        - #CONTACT
-      -->
-
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-    <div class="container">
-
-      <p class="copyright">
-        © 2024 Serkan Bilsel - All rights reserved.
-      </p>
-
-
-
-      </ul>
-
-    </div>
-  </footer>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-
-
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+  </body>
 </html>
