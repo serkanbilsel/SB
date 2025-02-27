@@ -193,7 +193,7 @@ html {
 body {
   background-color: #EEEEEE; 
   color: var(--black-coral);
-  font-size: 1rem;
+  font-size: 1.7rem;
   line-height: 1.7;
 }
 
@@ -652,7 +652,7 @@ textarea.input-field {
 
 @media (min-width: 768px) {
   .container { max-width: 720px; }
-  .section-text { --fs-5: 2rem; }
+  .section-text { --fs-5: 1.7rem; }
   .about .grid-list { grid-template-columns: 1fr 1fr; }
   .project .title-wrapper {
     display: flex;
@@ -763,7 +763,7 @@ textarea.input-field {
   .container,
   .header { max-width: 1320px; }
   .hero .container { grid-template-columns: 1fr 0.8fr; }
-  .hero .section-text { --fs-5: 2.4rem; }
+  .hero .section-text { --fs-5: 1.7rem; }
   .about .wrapper { gap: 100px; }
   .about .grid-list { gap: 60px; }
 }
